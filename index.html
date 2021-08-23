@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Ping coming soon page</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script src="./main.js" defer></script>
+  <style>
+    .attribution { 
+      font-size: 0.9em; 
+      text-align: center; 
+      display: block;
+      width: 100%;
+      bottom: 0; 
+    }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="./images/logo.svg" alt="logo"/>
+  </header>
+  <main>
+    <h1>We are launching <span>soon!</span></h1>
+    <p>Subscribe and get notified</p>
+    <form onsubmit="validate(this)" >
+     <div class="text-helper">
+        <div class="input">
+          <input name="email" type="text" placeholder="Your email address...">
+        </div>
+        <div class="error-text"></div>
+     </div>
+      <button>Notify Me</button>
+    </form>
+    <div>
+      <img class="metrics" src="./images/illustration-dashboard.png" alt="metrics">
+    </div>
+  </main>
+
+  <div class="social">
+    <i class="fab fa-facebook-f"></i>
+    <i class="fab fa-twitter"></i>
+    <i class="fab fa-instagram"></i>
+  </div>
+  <p class="copy">&copy; Copyright Ping. All rights reserved.</p>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/PipeShot12" target="_blank">PipeDev</a>.
+    </p>
+  </footer>
+</body>
+</html>
